@@ -1,0 +1,355 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root
+{
+    --primary-colour:#7223c7;
+    --secondary-colour:#11C9B3;
+    --primary-dark-colour:#252627;
+    --secondary-active-colour:#E67240;
+    --secondary-white:rgb(223, 223, 223);
+}
+
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+[data-colour="Green"] {
+    color: var(--secondary-colour);
+  }
+
+
+/* Nav Bar */
+header
+{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-colour);
+    color: white;
+
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--primary-dark-colour);
+    max-width: 100%;
+    height: 6.25rem;
+}
+
+.nav-content
+{
+    display: flex;
+    font-size: 3rem;
+    padding: 0.8rem;
+    width: 20%;
+    justify-content: space-evenly;
+
+}
+
+.nav-logo
+{
+    display: flex;
+    font-size: 3rem;
+    padding: 0.8rem;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.nav-content li
+{
+    display: inline-block;
+}
+
+/* Landing Section */
+
+.header-content
+{
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 8rem 1.25rem 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.header-name
+{
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+.header-sub-name
+{
+    font-size: 1.625rem;
+}
+.header-content-button
+{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-button
+{
+    padding: 1.25rem;
+    background-color: var(--secondary-colour);
+    color:var(--primary-dark-colour);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0.313rem 0.313rem 1rem var(--primary-dark-colour);
+}
+
+.header-button:hover
+{
+    background-color: var(--secondary-active-colour);
+    color: white;
+}
+
+.about-me-content
+{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-me-image
+{
+    max-width: 60%;
+    background-color: var(--primary-colour);
+    border-radius: 10px;
+    position: relative;
+}
+
+.about-me-image img
+{
+    z-index: 3;
+}
+
+.image-border
+{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 10px;
+
+}
+
+[data-border="top"] {
+    border-left: 10px solid var(--primary-dark-colour);
+    border-top: 10px solid var(--primary-dark-colour);
+    top: -20px;
+    left: -20px;
+
+}
+
+[data-border="bottom"] {
+    border-right: 10px solid var(--primary-dark-colour);
+    border-bottom: 10px solid var(--primary-dark-colour);
+    bottom: -20px;
+    right: -20px;
+}
+
+.about-me-information
+{
+    max-width: 90%;
+    background-color: var(--primary-dark-colour);
+    color: white;
+    padding: 1.25rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 30px black;
+}
+
+.grid-cards
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.skill-card
+{
+    max-width: 100px;
+    background-color: var(--primary-colour);
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px 12px 5px 5px;
+    box-shadow: 2px 2px 10px rgb(57, 57, 57);
+}
+
+.card-image
+{
+ max-width: 100%;
+ max-height: 50%;
+ padding: 5px;
+ border-bottom: 2px solid var(--primary-dark-colour);
+ background-color: white;
+ border-radius: 12px 12px 0 0;
+}
+
+
+.card-image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.card-name
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: 100%;
+    max-height: 50%;
+    color: white;
+}
+
+.skill-heading
+{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-active-colour);
+    max-width: 90%;
+    padding: 1.25rem;
+    border-radius: 5px;
+    color: white;
+}
+.projects-container
+{
+    background-color: var(--primary-dark-colour);
+}
+
+
+.project-content
+{
+    padding-top: 2rem;
+    max-width: 100%;
+    min-height: 100vh;
+    color: white;
+}
+
+.grid-projects
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.project{
+    height: 420px;
+    max-width: 380px;
+    background-color: var(--primary-colour);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.project-image
+{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-image img
+{
+  min-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.project-details
+{
+    height: 55%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-tools
+{
+    height: 40%;
+    display: flex;
+    flex-basis: auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-tools p 
+{
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.project-name
+{
+    height: 25%;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.project-button
+{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-button-styles
+{
+    background-color: #11C9B3;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--primary-dark-colour);
+}
