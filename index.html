@@ -10,25 +10,45 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="nav-content">
-                    <i class="bi bi-list"></i>
+        <header class="container-fluid">
+            <nav class="navbar fixed-top navbar-dark">
+                <div class="container-fluid navbar-content">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="nav-logo">
+                        <p>logo here</p>
+                    </div>
                 </div>
-                <div class="nav-logo">
-                    <h2>Logo Here</h2>
+              </nav>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-            </nav>
-            <div class=" header-content">
+                    <div class="offcanvas-body">
+                        <a class="nav-selection" href="">Home</a>
+                        <a class="nav-selection" href="">About Me</a>
+                        <a class="nav-selection" href="">Projects</a>
+                        <a class="nav-selection" href="">Designs</a>
+                        <a class="nav-selection" href="">Hobbies</a>
+                        <a class="nav-selection" href="">Contact Me</a>
+                    </div>
+                </div>
+
+
+            
+            <div class="container header-content">
+                <div class="header-content-box">
                 <div class="header-content-text">
                     <p>Hi,</p>
                     <h1 class="header-name" data-colour="Green">I'm Brendon</h1>
-                    <p class="header-sub-name" data-colour="Green"> Front-end devloper / Graphic Designer</p>
+                    <p class="header-sub-name" data-colour="Green">a Front-end devloper / Graphic Designer</p>
                     <p>Welcome to my portfolio</p>
                 </div>
                 <div class="header-content-button">
                     <a href="" class="header-button">Contact Me</a>
                 </div>
+            </div>
             </div>
         </header>
         <main class="container-fluid">
@@ -73,7 +93,7 @@
                             <img src="images/sass.png" alt="">
                         </div>
                         <div class="card-name">
-                            <p>Sass</p>
+                            <p>SASS</p>
                         </div>
                     </div>
                     <div class="skill-card">
@@ -172,7 +192,6 @@
                 <div class="skill-heading">
                     <h2>Projects</h2>
                 </div>
-
                 <div class="grid-projects">
                     <div class="project">
                         <div class="project-image">
@@ -201,14 +220,56 @@
                         </div>
                         <div class="project-details">
                             <div class="project-name">
-                                <h3>Bug Tracking App</h3>
+                                <h3>Flash Card</h3>
                             </div>
                             <div class="project-tools">
-                                    <p>EJS</p>
+                                    <p>React</p>
+                                    <p>JSX</p>
+                                    <p>CSS3</p>
+                                    <p>SASS</p>
+                                    <p>JavaScript</p>
+                                    <P>Firebase</P>
+                            </div>
+                            <div class="project-button">
+                                <button class="project-button-styles">More Information</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-image">
+                            <img src="images/ammar-abu-zaid-AP8lQ6de8FA-unsplash.jpg" alt="">
+                        </div>
+                        <div class="project-details">
+                            <div class="project-name">
+                                <h3>Anime List</h3>
+                            </div>
+                            <div class="project-tools">
+                                    <p>React</p>
+                                    <p>JSX</p>
                                     <p>CSS3</p>
                                     <p>JavaScript</p>
-                                    <P>Node JS</P>
-                                    <p>Express</p>
+                            </div>
+                            <div class="project-button">
+                                <button class="project-button-styles">More Information</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-image">
+                            <img src="images/ammar-abu-zaid-AP8lQ6de8FA-unsplash.jpg" alt="">
+                        </div>
+                        <div class="project-details">
+                            <div class="project-name">
+                                <h3>Sports App</h3>
+                            </div>
+                            <div class="project-tools">
+                                    <p>React</p>
+                                    <p>JSX</p>
+                                    <P>SASS</P>
+                                    <P>Material-UI</P>
+                                    <P>JavaScript</P>
                             </div>
                             <div class="project-button">
                                 <button class="project-button-styles">More Information</button>
@@ -243,56 +304,15 @@
                         </div>
                         <div class="project-details">
                             <div class="project-name">
-                                <h3>Bug Tracking App</h3>
+                                <h3>Kanji App</h3>
                             </div>
                             <div class="project-tools">
-                                    <p>EJS</p>
+                                    <p>React</p>
+                                    <P>JSX</P>
                                     <p>CSS3</p>
                                     <p>JavaScript</p>
-                                    <P>Node JS</P>
-                                    <p>Express</p>
-                            </div>
-                            <div class="project-button">
-                                <button class="project-button-styles">More Information</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="images/ammar-abu-zaid-AP8lQ6de8FA-unsplash.jpg" alt="">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-name">
-                                <h3>Bug Tracking App</h3>
-                            </div>
-                            <div class="project-tools">
-                                    <p>EJS</p>
-                                    <p>CSS3</p>
-                                    <p>JavaScript</p>
-                                    <P>Node JS</P>
-                                    <p>Express</p>
-                            </div>
-                            <div class="project-button">
-                                <button class="project-button-styles">More Information</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="images/ammar-abu-zaid-AP8lQ6de8FA-unsplash.jpg" alt="">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-name">
-                                <h3>Bug Tracking App</h3>
-                            </div>
-                            <div class="project-tools">
-                                    <p>EJS</p>
-                                    <p>CSS3</p>
-                                    <p>JavaScript</p>
-                                    <P>Node JS</P>
-                                    <p>Express</p>
+                                    <P>Material-UI</P>
+                    
                             </div>
                             <div class="project-button">
                                 <button class="project-button-styles">More Information</button>
@@ -305,7 +325,55 @@
             </div>
         </main>
 
-
+        <main class="container-fluid design-container">
+            <div class="container design-content">
+                <div class="skill-heading">
+                    <h2>Design</h2>
+                </div>
+                <div class="design-box">
+                <div class="design-image">
+                    <img src="images/disign.png" alt="">
+                </div>
+                <div class="design-information">
+                    <div class="design-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ex molestias cupiditate vel totam quasi voluptatibus dolorem, 
+                            nulla quam culpa amet consequuntur laborum suscipit voluptas, molestiae repellendus
+                            perspiciatis asperiores a commodi. Iste nostrum corrupti unde, magnam eius maiores iusto, repellendus consequatur perspiciatis provident, 
+                            adipisci vero nemo velit quod. Possimus, aliquam!</p>
+                    </div>
+                    <div class="design-button">
+                        <button type="button" class="btn btn-lg" data-button="Green">Enter</button>
+                    </div>
+                </div>
+             </div>
+            </div>
+        </main>
+        <section class="container-fluid form-container">
+            <div class="container form-content">
+                <div class="form-card">
+                    <h3>Contact Me</h3>
+                    <form>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea type="email"  class="form-control" id="email" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" data-button="Green">Submit</button>
+                      </form>
+            </div>
+        </div>
+        </section>
+        <footer>
+            <p>Brendon O'Neill</p>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="" async defer></script>
     </body>

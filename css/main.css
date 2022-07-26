@@ -1,10 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root
 {
     --primary-colour:#7223c7;
     --secondary-colour:#11C9B3;
     --primary-dark-colour:#252627;
+    --primary-nav-colour:#1f1f1f;
     --secondary-active-colour:#E67240;
     --secondary-white:rgb(223, 223, 223);
 }
@@ -16,6 +17,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 img
@@ -26,6 +28,16 @@ img
 
 [data-colour="Green"] {
     color: var(--secondary-colour);
+  }
+
+[data-colour="Orange"] {
+    color: var(--secondary-active-colour);
+  }
+
+  [data-button="Green"] {
+    background-color: var(--secondary-colour);
+    font-weight: bold;
+    color: var(--primary-dark-colour);
   }
 
 
@@ -41,36 +53,53 @@ header
 
 nav
 {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    background-color: var(--primary-dark-colour);
-    max-width: 100%;
-    height: 6.25rem;
+    background-color: var(--primary-nav-colour);
+    position: fixed;
 }
 
-.nav-content
+.offcanvas
+{
+    background-color: var(--primary-nav-colour);
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0  0.8rem 0.8rem 0;
+}
+
+.offcanvas-header
 {
     display: flex;
-    font-size: 3rem;
-    padding: 0.8rem;
-    width: 20%;
-    justify-content: space-evenly;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 1rem 1rem;
+}
 
+.nav-selection
+{
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    height: 3rem;
+    border-bottom: 3px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-selection:hover
+{
+    color: var(--secondary-colour);
+    border-bottom: 3px solid var(--secondary-colour);
 }
 
 .nav-logo
 {
     display: flex;
-    font-size: 3rem;
+    font-size: 1rem;
     padding: 0.8rem;
     width: 20%;
     justify-content: space-evenly;
-}
-
-.nav-content li
-{
-    display: inline-block;
 }
 
 /* Landing Section */
@@ -79,18 +108,23 @@ nav
 {
     max-width: 100%;
     min-height: 100vh;
-    padding: 8rem 1.25rem 1.25rem 1.25rem;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content-box
+{
+ max-width: 100%;
+ min-height: 50%;
 }
 
 .header-name
 {
     font-weight: bold;
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 .header-sub-name
 {
@@ -106,13 +140,13 @@ nav
 
 .header-button
 {
-    padding: 1.25rem;
+    padding: 1rem;
     background-color: var(--secondary-colour);
     color:var(--primary-dark-colour);
     text-decoration: none;
     cursor: pointer;
-    font-size: 1.5rem;
-    border-radius: 1.25rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
     box-shadow: 0.313rem 0.313rem 1rem var(--primary-dark-colour);
 }
 
@@ -138,6 +172,7 @@ nav
     background-color: var(--primary-colour);
     border-radius: 10px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .about-me-image img
@@ -150,10 +185,8 @@ nav
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;  
     border-radius: 10px;
-
 }
 
 [data-border="top"] {
@@ -193,9 +226,9 @@ nav
 
 .skill-card
 {
-    max-width: 100px;
+    width: 100px;
     background-color: var(--primary-colour);
-    max-height: 300px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -226,7 +259,7 @@ nav
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     max-width: 100%;
     max-height: 50%;
@@ -235,7 +268,7 @@ nav
 
 .skill-heading
 {
-    margin: 20px auto;
+    margin: 2rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,6 +278,7 @@ nav
     border-radius: 5px;
     color: white;
 }
+
 .projects-container
 {
     background-color: var(--primary-dark-colour);
@@ -253,7 +287,7 @@ nav
 
 .project-content
 {
-    padding-top: 2rem;
+    padding: 2rem 0;
     max-width: 100%;
     min-height: 100vh;
     color: white;
@@ -270,7 +304,8 @@ nav
 
 .project{
     height: 420px;
-    max-width: 380px;
+    width: 320px;
+    margin: auto;
     background-color: var(--primary-colour);
     display: flex;
     flex-direction: column;
@@ -352,4 +387,127 @@ nav
     padding: 10px;
     border-radius: 10px;
     color: var(--primary-dark-colour);
+    font-weight: bold;
+}
+
+.design-container
+{
+    background-color: var(--primary-colour);
+}
+
+.design-content
+{
+    padding: 2rem 0;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.design-image
+{
+    max-width:  60%;
+    max-height: 30%;
+    background-color: black;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.design-image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.design-information
+{
+    max-height: 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.design-text
+{
+    max-width: 90%;
+    max-height: 75%;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.design-box
+{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.design-button
+{
+    max-width: 100%;
+}
+
+.design-button-styles
+{
+    width: 500px;
+    background-color: #11C9B3;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: var(--primary-dark-colour);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container
+{
+    background-color: var(--secondary-white);
+}
+
+.form-content
+{   
+    padding: 2rem 0;
+    color: white;
+    max-width: 100%;
+}
+
+.form-card
+{
+    padding-top: 2rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    background-color: var(--primary-dark-colour);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+form
+{
+    padding: 0.5rem;
+    max-width: 80%;
+}
+
+.form-input
+{
+    max-width: 90%;
+    border-radius: 0.2rem;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+footer
+{
+    width: 100%;
+    height: 3.25rem;
+    background-color: var(--primary-nav-colour);
+    color: white;
+    padding: 1rem;
 }
