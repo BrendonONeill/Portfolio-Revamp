@@ -8,8 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mediaQ.css">
     </head>
     <body>
+        <!-- Navbar Start -->
         <header class="container-fluid">
             <nav class="navbar fixed-top navbar-dark">
                 <div class="container-fluid navbar-content">
@@ -21,40 +23,42 @@
                     </div>
                 </div>
               </nav>
+              <!-- Navbar End and off-canvas Start -->
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
                   <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                     <div class="offcanvas-body">
-                        <a class="nav-selection" href="">Home</a>
-                        <a class="nav-selection" href="">About Me</a>
-                        <a class="nav-selection" href="">Projects</a>
-                        <a class="nav-selection" href="">Designs</a>
-                        <a class="nav-selection" href="">Hobbies</a>
-                        <a class="nav-selection" href="">Contact Me</a>
+                        <a class="nav-selection" href="#hero">Home</a>
+                        <a class="nav-selection" href="#aboutme">About Me</a>
+                        <a class="nav-selection" href="#projects">Projects</a>
+                        <a class="nav-selection" href="#design">Designs</a>
+                        <a class="nav-selection" href="#hobbies">Hobbies</a>
+                        <a class="nav-selection" href="#form">Contact Me</a>
                     </div>
                 </div>
-
-
-            
-            <div class="container header-content">
-                <div class="header-content-box">
-                <div class="header-content-text">
+                <!-- off-canvas End and landing section Start -->
+            <div class="container landing-section-container">
+                <div class="landing-content">
+                <div class="landing-content-text">
                     <p>Hi,</p>
                     <h1 class="header-name" data-colour="Green">I'm Brendon</h1>
-                    <p class="header-sub-name" data-colour="Green">a Front-end devloper / Graphic Designer</p>
+                    <h2 class="header-sub-name">Front-end devloper</h2>
                     <p>Welcome to my portfolio</p>
                 </div>
                 <div class="header-content-button">
                     <a href="" class="header-button">Contact Me</a>
                 </div>
-            </div>
+                </div>
             </div>
         </header>
+
+
+
+        
+        <!-- Landiing section End and About-me Start -->
         <main class="container-fluid">
-            <div class="about-me-section">
-                
-                <div class="fluid-container about-me-content">
+            <div class="container section-container about-me-content">
                     <div class="about-me-image">
                         <div class="image-border" data-border="top"></div>
                         <div class="image-border" data-border="bottom"></div>
@@ -64,11 +68,11 @@
                         <h2>About me</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium est corporis consectetur modi aut, ratione nisi libero provident sint eos cumque similique officia, repudiandae iusto veritatis et fugit eligendi. Dolor, repellat. Sequi eum fugiat architecto numquam ut qui incidunt recusandae.</p>
                     </div>
-                </div>
             </div>
-            <div class="container skillset-section"></div>
+         <!-- About-me End and Skillset Start -->   
+            <div class="container section-container">
             <div class="devloper-skillset">
-                <div class="skill-heading">
+                <div class="section-heading">
                     <h2>Devloper Skills</h2>
                 </div>
                 <div class="grid-cards">
@@ -172,24 +176,91 @@
                 </div>
             </div>
             <div class="design-skillset">
-                <div class="skill-heading">
+                <div class="section-heading">
                     <h2>Design Skills</h2>
                 </div>
                 <div class="grid-cards">
                     <div class="skill-card">
                         <div class="card-image">
-                            <img src="images/creativeC.png" alt="">
+                            <img src="images/photoshop.png" alt="">
                         </div>
                         <div class="card-name">
-                            <p>Html</p>
+                            <p>Photoshop</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-image">
+                            <img src="images/ill.png" alt="">
+                        </div>
+                        <div class="card-name">
+                            <p>Illustrator</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-image">
+                            <img src="images/indesign.png" alt="">
+                        </div>
+                        <div class="card-name">
+                            <p>Indesign</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-image">
+                            <img src="images/prem.png" alt="">
+                        </div>
+                        <div class="card-name">
+                            <p>Premiere Pro</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-image">
+                            <img src="images/a-design.png" alt="">
+                        </div>
+                        <div class="card-name">
+                            <p>Affinity Design</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-image">
+                            <img src="images/a-photo.png" alt="">
+                        </div>
+                        <div class="card-name">
+                            <p>Affinity Photo</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-image">
+                            <img src="images/canva-logo-brandlogos.net.png" alt="">
+                        </div>
+                        <div class="card-name">
+                            <p>Canva</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-image">
+                            <img src="images/figma.png" alt="">
+                        </div>
+                        <div class="card-name">
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-image">
+                            <img src="images/gimp.png" alt="">
+                        </div>
+                        <div class="card-name">
+                            <p>Gimp</p>
                         </div>
                     </div>
                 </div>
+
+                </div>
             </div>
         </main>
-        <main class="container-fluid projects-container">
-            <div class="container project-content">
-                <div class="skill-heading">
+        <!-- Sillsets End and Projects Start -->
+        <main class="container-fluid" data-bg='Dark-purple' id="projects">
+            <div class="container section-container">
+                <div class="section-heading">
                     <h2>Projects</h2>
                 </div>
                 <div class="grid-projects">
@@ -312,7 +383,6 @@
                                     <p>CSS3</p>
                                     <p>JavaScript</p>
                                     <P>Material-UI</P>
-                    
                             </div>
                             <div class="project-button">
                                 <button class="project-button-styles">More Information</button>
@@ -324,10 +394,10 @@
 
             </div>
         </main>
-
-        <main class="container-fluid design-container">
-            <div class="container design-content">
-                <div class="skill-heading">
+        <!-- Project End and Design Start -->
+        <main class="container-fluid" data-bg="Purple">
+            <div class="container section-container">
+                <div class="section-heading">
                     <h2>Design</h2>
                 </div>
                 <div class="design-box">
@@ -348,8 +418,51 @@
              </div>
             </div>
         </main>
-        <section class="container-fluid form-container">
-            <div class="container form-content">
+        <!-- Design End and Hobbies Start -->
+        <section class="container-fluid">
+            <div class="container section-container">
+                <div class="section-heading">
+                    <h2>Hobbies</h2>
+                </div>
+
+                <div class="hobby-content">
+                    <div class="hobby-box">
+                        <hobby-image>
+                            <img src="images/controller.png" alt="">
+                        </hobby-image>
+                        <div class="hobbytext">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea dignissimos nulla praesentium veritatis voluptas minus obcaecati corporis, illum accusantium fugit.</p>
+                        </div>
+                    </div>
+                    <div class="hobby-box">
+                        <hobby-image>
+                            <img src="images/prog.png" alt="">
+                        </hobby-image>
+                        <div class="hobbytext">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea dignissimos nulla praesentium veritatis voluptas minus obcaecati corporis, illum accusantium fugit.</p>
+                        </div>
+                    </div>
+                    <div class="hobby-box">
+                        <hobby-image>
+                            <img src="images/japan.png" alt="">
+                        </hobby-image>
+                        <div class="hobbytext">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea dignissimos nulla praesentium veritatis voluptas minus obcaecati corporis, illum accusantium fugit.</p>
+                        </div>
+                    </div>
+                    <div class="hobby-box">
+                        <hobby-image>
+                            <img src="images/drawing.png" alt="">
+                        </hobby-image>
+                        <div class="hobbytext">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea dignissimos nulla praesentium veritatis voluptas minus obcaecati corporis, illum accusantium fugit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" data-bg='Dark-purple'>
+            <div class="container section-container">
                 <div class="form-card">
                     <h3>Contact Me</h3>
                     <form>

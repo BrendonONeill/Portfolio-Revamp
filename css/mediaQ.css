@@ -1,0 +1,94 @@
+@media only screen and (max-width: 576px) {
+    .landing-section-container
+    {
+        max-width: 100%;
+        min-height: 100vh;
+        padding-top: 70%;
+    }
+
+    .section-container
+    {
+        max-width: 100%;
+        padding-block: 4rem 2.5rem;
+    }
+
+    .about-me-content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .design-box
+    {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 577px) {
+    .landing-section-container
+    {
+    max-width: 10%;
+    min-height: 10vh;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .container {
+      width: 100%;
+      padding-left: 23px;
+      flex-direction: column-reverse;
+    }
+    .boxes {
+      width: 100%;
+    }
+  }
+*/
