@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;0,900;1,400;1,700&display=swap');
 /* reset, set-up and custom vars*/
 :root
 {
@@ -32,6 +32,13 @@ img
     display: block;
 }
 
+.section-container
+{
+    max-width: 100%;
+    padding-block: 4rem 2.5rem;
+    min-height: 100vh;
+}
+
 /* reused css */
 
 .section-heading
@@ -50,7 +57,7 @@ img
 {
     color: white;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 [data-colour="Green"] {
@@ -138,10 +145,19 @@ nav
 }
 
 /* Landing Section */
+
+.landing-section-container
+{
+        max-width: 100%;
+        min-height: 100vh;
+        padding-top: 80%;
+}
+
 .landing-content
 {
     max-width: 100%;
 }
+
 
 .landing-content-text
 {
@@ -152,20 +168,20 @@ nav
 .landing-content-text p
 {
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: 500;
     color: white;
 }
 
 .header-name
 {
     font-size: 2.8rem;
-    font-weight: 900;
+    font-weight: 800;
     margin-bottom: 1rem;
 }
 
 .header-sub-name
 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 300;
     font-style: italic;
     color: white;
@@ -201,14 +217,22 @@ nav
 
 /* About-me section */
 
+.about-me-content
+{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+}
 
 .about-me-image
 {
-    max-width: 60%;
+    margin-block: 2rem 6rem;
+    max-width: 50%;
+    max-height: 50%;
     background-color: var(--primary-colour);
     border-radius: 10px;
     position: relative;
-    margin-bottom: 2rem;
 }
 .about-me-image img
 {
@@ -239,13 +263,17 @@ nav
 .about-me-information
 {
     max-width: 90%;
+    max-height: 40%;
     background-color: var(--primary-dark-colour);
     color: white;
-    padding: 1.25rem;
+    padding-inline: 1.25rem;
+    padding-block: 2rem;
     border-radius: 20px;
     font-size: 1.5rem;
     box-shadow: 5px 5px 30px black;
 }
+
+
 
 /* Skillset-section */
 .grid-cards
@@ -401,61 +429,103 @@ nav
 }
 /* Design section */
 
-
-.design-image
-{
-    max-width:  75%;
-    max-height: 30%;
-    background-color: black;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-}
-
-.design-image img
+.design-box
 {
     max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.design-box-image
+{
+    max-width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.image-box
+{
+    width: 40%;
+}
+
+.design-box-image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 20px;
 }
 
-.design-information
+.design-box-information
 {
     max-height: 50%;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.design-text
+.design-box-information-text
 {
-    max-width: 90%;
-    max-height: 75%;
-    border-radius: 5px;
-    background-color: white;
-    padding: 0.5rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 20px;
     margin-bottom: 2rem;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 30px 3px var(--primary-dark-colour);
 }
 
-
-
-.design-button
+.design-box-information-button
 {
-    max-width: 100%;
-}
-
-.design-button-styles
-{
-    width: 500px;
-    background-color: #11C9B3;
-    padding: 15px 40px;
+    background-color: var(--secondary-colour);
+    max-width: 30%;
+    text-align: center;
+    padding: 0.75rem;
     border-radius: 10px;
-    color: var(--primary-dark-colour);
+    margin-bottom: 2rem;
+    margin: auto;
+}
+
+.design-box-information-button a
+{
+    color: var(--primary-dark-colour); 
     text-decoration: none;
+    font-size: 1.2rem;
     font-weight: bold;
 }
+
+/* Hobbies */
+
+.hobby-box
+{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.hobby-text
+{
+    background-color: var(--primary-dark-colour);
+    color: #fff;
+    padding: 2rem;
+    bottom: 15px;
+    right: 0;
+    max-width: 100%;
+    border-radius: 10px;
+    border-left: 20px solid var(--primary-colour);
+}
+
+.hobby-name
+{
+    border-bottom: 5px solid #fff;
+    margin-bottom: 1rem;
+}
+
+
+
+
 
 /* Form-section */
 

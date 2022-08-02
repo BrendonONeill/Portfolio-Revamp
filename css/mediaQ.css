@@ -1,61 +1,169 @@
 @media only screen and (max-width: 576px) {
-    .landing-section-container
-    {
-        max-width: 100%;
-        min-height: 100vh;
-        padding-top: 70%;
-    }
+    
 
-    .section-container
-    {
-        max-width: 100%;
-        padding-block: 4rem 2.5rem;
-    }
+   
 
-    .about-me-content
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+    
 
-    .design-box
-    {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
+    
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  @media only screen and (min-width: 577px) {
-    .landing-section-container
-    {
-    max-width: 10%;
-    min-height: 10vh;
-    }
+@media only screen and (min-width: 577px) and (max-width: 1000px) {
+   
+  .landing-section-container
+  {
+          padding-top: 50%;
   }
 
+    .landing-content-text
+{
+    border-left: 1.2rem double white;
+    padding-left: 2rem;
+}
+
+.landing-content-text p
+{
+    font-size: 3rem;
+}
+
+.header-name
+{
+    font-size: 4.2rem;
+}
+
+.header-sub-name
+{
+    font-size: 2.9rem;
+}
 
 
+
+.grid-cards
+{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+.grid-projects
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+   
+  .landing-section-container
+  {
+          padding-top: 50%;
+  }
+
+    .landing-content-text
+{
+    border-left: 1.2rem double white;
+    padding-left: 2rem;
+}
+
+.landing-content-text p
+{
+    font-size: 3rem;
+}
+
+.header-name
+{
+    font-size: 4.2rem;
+}
+
+.header-sub-name
+{
+    font-size: 2.9rem;
+}
+
+
+
+.grid-cards
+{
+    grid-template-columns: repeat(7, 1fr);
+}
+
+
+
+.grid-projects
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.design-box
+{
+        flex-direction: row;
+        
+}
+
+.design-image
+{
+    width:  50%;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.design-information
+{
+    height: 100%;
+    max-width: 50%;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+   
+  .landing-section-container
+  {
+          padding-top: 50%;
+  }
+
+    .landing-content-text
+{
+    border-left: 1.2rem double white;
+    padding-left: 2rem;
+}
+
+.landing-content-text p
+{
+    font-size: 3rem;
+}
+
+.header-name
+{
+    font-size: 4.2rem;
+}
+
+.header-sub-name
+{
+    font-size: 2.9rem;
+}
+
+
+
+.grid-cards
+{
+    grid-template-columns: repeat(10, 1fr);
+}
+
+
+
+.grid-projects
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
 
 
 
