@@ -29,14 +29,12 @@ body
 img
 {
     max-width: 100%;
-    display: block;
 }
 
 .section-container
 {
-    max-width: 100%;
-    padding-block: 4rem 2.5rem;
-    min-height: 100vh;
+    max-width: min(100% 1000px);
+    padding-block: 5rem;
 }
 
 /* reused css */
@@ -146,15 +144,9 @@ nav
 
 /* Landing Section */
 
-.landing-section-container
-{
-        max-width: 100%;
-        min-height: 100vh;
-        padding-top: 80%;
-}
-
 .landing-content
 {
+    margin-top: 20%;
     max-width: 100%;
 }
 
@@ -198,7 +190,7 @@ nav
 
 .header-button
 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 0.8rem;
     background-color: var(--secondary-colour);
@@ -268,8 +260,10 @@ nav
     color: white;
     padding-inline: 1.25rem;
     padding-block: 2rem;
-    border-radius: 20px;
+    border-radius: 10px  10px 30px 30px;
+    border-top: 20px solid var(--primary-colour);
     font-size: 1.5rem;
+    line-height: 1.7;
     box-shadow: 5px 5px 30px black;
 }
 
@@ -335,7 +329,8 @@ nav
 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 5rem;
+    column-gap: 1rem;
+    row-gap: 5rem;
     padding: 10px;
     max-width: 100%;
 }
@@ -431,59 +426,69 @@ nav
 
 .design-box
 {
-    max-width: 100%;
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    min-height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.8fr 0.2fr;
+    grid-template-areas: 
+    "design-box-image"
+    "design-box-text"
+    "design-box-button";
+    row-gap: 1rem;
 }
 
 .design-box-image
 {
-    max-width: 100%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-
-.image-box
-{
-    width: 40%;
+  grid-area: "design-box-image";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .design-box-image img
 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
+    max-width: 80vw;
+    object-fit: contain;
 }
 
-.design-box-information
-{
-    max-height: 50%;
-    max-width: 100%;
-}
 
 .design-box-information-text
 {
     background-color: #fff;
-    padding: 1rem;
-    border-radius: 20px;
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    box-shadow: 5px 5px 30px 3px var(--primary-dark-colour);
+    grid-area: "design-box-text";
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 3px solid var(--primary-dark-colour);
+    padding-block: 1.2rem;
+    padding-inline: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.7;
+    
+}
+
+.design-box-information-text p
+{
+    padding-bottom: 1rem;
 }
 
 .design-box-information-button
 {
-    background-color: var(--secondary-colour);
-    max-width: 30%;
+    
+    grid-area: "design-box-button";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design-button
+{
+    background-color: #11C9B3;
     text-align: center;
-    padding: 0.75rem;
+    padding: 1.2rem 2.5rem;
     border-radius: 10px;
     margin-bottom: 2rem;
     margin: auto;
@@ -501,7 +506,8 @@ nav
 
 .hobby-box
 {
-    max-width: 100%;
+    max-width: 80%;
+    margin-inline: auto;
     margin-bottom: 1rem;
 }
 
