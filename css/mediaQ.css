@@ -1,5 +1,9 @@
 @media only screen and (max-width: 376px) {
 
+    .landing-content
+    {
+        padding-top: 20%; 
+    }
 
     .about-me-information
     {
@@ -13,6 +17,16 @@
     .remove-padding
     {
         padding-inline: 0;
+    }
+
+    .section-heading
+    {
+        max-width: 100%;
+    }
+
+    .section-heading h2
+    {
+        font-size: 1.8rem;
     }
 
     .grid-cards
@@ -36,6 +50,15 @@
     {
         font-size: 15px;
     }
+
+    
+    .design-box-image img
+    {
+        
+        width: max(80vw, 280px);
+        max-width: 280px;
+    }
+
     
     
     .hobby-box
@@ -49,31 +72,20 @@
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
    
-  .landing-section-container
-  {
-          padding-top: 50%;
-  }
-
-    .landing-content-text
-{
-    border-left: 1.2rem double white;
-    padding-left: 2rem;
-}
-
-.landing-content-text p
-{
-    font-size: 3rem;
-}
-
-.header-name
-{
-    font-size: 4.2rem;
-}
-
-.header-sub-name
-{
-    font-size: 2.9rem;
-}
+    .landing-content-text p
+    {
+        font-size: 2.6rem;
+    }
+    
+    .header-name
+    {
+        font-size: 3.4rem;
+    }
+    
+    .header-sub-name
+    {
+        font-size: 2.5rem;
+    }
 
 .about-me-image
 {
@@ -101,53 +113,58 @@
     row-gap: 2rem;
 }
 
-
-
-.design-box-image img
+.design-box-information-text
 {
-    max-width: 50vw;
+  max-width: 70vh;
+  margin: auto;  
+}
+
+}
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    .landing-content
+{
+
+    padding-top: 15%;
     
 }
 
-
-
-
+.landing-content-text
+{
+    border-left: 20px double white;
+    padding-left: 1rem;
 }
-
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
    
-
-    .landing-content-text
-{
-    border-left: 1.2rem double white;
-    padding-left: 2rem;
-}
-
-.landing-content-text p
-{
-    font-size: 3rem;
-}
-
-.header-name
-{
-    font-size: 4.2rem;
-}
-
-.header-sub-name
-{
-    font-size: 2.9rem;
-}
+    .landing-content-text p
+    {
+        font-size: 3.6rem;
+    }
+    
+    .header-name
+    {
+        font-size: 4.4rem;
+    }
+    
+    .header-sub-name
+    {
+        font-size: 3.5rem;
+    }
 
 .about-me-content
 {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding-inline: 2rem;
 }
 
 .about-me-image
 {
     max-width: 25%;
+    margin-inline: 1rem 0;
 }
 
 .about-me-information
@@ -177,14 +194,9 @@
     grid-template-rows: 0.5fr 0.4fr;
     column-gap: 1rem;
     row-gap: 4rem;
+    padding-inline: 2rem;
 }
 
-
-
-.design-box-image img
-{
-    max-width: 30vw;
-}
 
 .design-box-information-button
 {
@@ -194,40 +206,60 @@
 }
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) and (max-width: 1999px) {
    
-
-    .landing-content-text
+    .landing-content
 {
-    border-left: 1.2rem double white;
-    padding-left: 2rem;
+    padding-top: 12%;
+    padding-inline: 4rem;
+    
 }
 
+.landing-content-text
+{
+    border-left: 20px double white;
+    padding-inline: 1rem;
+}
+   
 .landing-content-text p
-{
-    font-size: 3rem;
-}
-
+    {
+        font-size: 3.6rem;
+    }
+    
 .header-name
-{
-    font-size: 4.2rem;
-}
-
+    {
+        font-size: 4.4rem;
+    }
+    
 .header-sub-name
-{
-    font-size: 2.9rem;
-}
+    {
+        font-size: 3.5rem;
+    }
+
+    .header-content-button
+    {
+        padding-top: 5rem;
+    }
+
+    .header-button
+    {
+        font-size: 1.8rem;
+    }
+
 
 .about-me-content
 {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
 }
 
 .about-me-image
 {
+    margin-top: 5rem;
     max-width: 25%;
+    margin-inline: 1rem 0;
 }
 
 .about-me-information
@@ -260,14 +292,9 @@
     grid-template-rows: 0.5fr 0.4fr;
     column-gap: 1rem;
     row-gap: 4rem;
+    padding-inline: 2rem;
 }
 
-
-
-.design-box-image img
-{
-    max-width: 30vw;
-}
 
 .design-box-information-button
 {
@@ -276,6 +303,107 @@
 
 
 }
+
+@media only screen and (min-width: 2000px) {
+   
+    .landing-content
+    {
+        padding-top: 40%;
+        padding-inline: 4rem;
+        
+    }
+    
+    .landing-content-text
+    {
+        border-left: 20px double white;
+        padding-inline: 1rem;
+    }
+       
+    .landing-content-text p
+        {
+            font-size: 3.6rem;
+        }
+        
+    .header-name
+        {
+            font-size: 4.4rem;
+        }
+        
+    .header-sub-name
+        {
+            font-size: 3.5rem;
+        }
+    
+        .header-content-button
+        {
+            padding-top: 5rem;
+        }
+    
+        .header-button
+        {
+            font-size: 1.8rem;
+        }
+    
+    
+    .about-me-content
+    {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-inline: 2rem;
+    }
+    
+    .about-me-image
+    {
+        margin-top: 5.2rem;
+        max-width: 25%;
+        margin-inline: 1rem 0;
+    }
+    
+    .about-me-information
+    {
+        max-width: 65%;
+        max-height: 100%;
+        padding-block: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    
+    .grid-cards
+    {
+        grid-template-columns: repeat(10, 1.2fr);
+    }
+    
+    
+    
+    .grid-projects
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    
+    .design-box
+    {
+        margin-top: 8rem;
+        min-height: 40vh;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 0.5fr 0.4fr;
+        column-gap: 1rem;
+        row-gap: 4rem;
+        padding-inline: 2rem;
+    }
+    
+    
+    .design-box-information-button
+    {
+        grid-column: 1/3;
+    }
+    
+    
+}
+    
+
+
 
 
 

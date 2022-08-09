@@ -12,7 +12,7 @@
     </head>
     <body>
         <!-- Navbar Start -->
-        <header class="container-fluid">
+        <header>
             <nav class="navbar fixed-top navbar-dark">
                 <div class="container navbar-content">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <!-- off-canvas End and landing section Start -->
-            <div class="container section-container">
+            <div class="container-lg section-container heading-image">
                 <div class="landing-content">
                 <div class="landing-content-text">
                     <p>Hi,</p>
@@ -57,8 +57,8 @@
 
         
         <!-- Landiing section End and About-me Start -->
-        <main class="container-fluid">
-            <div class="container section-container about-me-content">
+        <main>
+            <div class="container-lg section-container about-me-content" data-bg='White'>
                     <div class="about-me-image">
                         <div class="image-border" data-border="top"></div>
                         <div class="image-border" data-border="bottom"></div>
@@ -70,7 +70,7 @@
                     </div>
             </div>
          <!-- About-me End and Skillset Start -->   
-            <div class="container section-container">
+            <div class="container-lg section-container" data-bg='White'>
             <div class="devloper-skillset">
                 <div class="section-heading">
                     <h2>Devloper Skills</h2>
@@ -258,8 +258,8 @@
             </div>
         </main>
         <!-- Sillsets End and Projects Start -->
-        <main class="container-fluid" data-bg='Dark-purple' id="projects">
-            <div class="container section-container remove-padding">
+        <main id="projects">
+            <div class="container-lg section-container remove-padding" data-bg='Dark-purple'>
                 <div class="section-heading">
                     <h2>Projects</h2>
                 </div>
@@ -396,8 +396,8 @@
             </div>
         </main>
         <!-- Project End and Design Start -->
-        <main class="container-fluid" data-bg="Purple">
-            <div class="container section-container">
+        <main>
+            <div class="container-lg section-container" data-bg="Purple">
                 <div class="section-heading">
                     <h2>Design</h2>
                 </div>
@@ -418,8 +418,8 @@
             </div>
         </main>
         <!-- Design End and Hobbies Start -->
-        <section class="container-fluid">
-            <div class="container section-container">
+        <section>
+            <div class="container-lg section-container" data-bg='White'>
                 <div class="section-heading">
                     <h2>Hobbies</h2>
                 </div>
@@ -456,25 +456,26 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid" data-bg='Dark-purple'>
-            <div class="container section-container">
-                <div class="form-card">
+        <section>
+            <div class="container-lg section-container" data-bg='Dark-purple'>
+                <div class="form-card align-items-center my-5">
                     <h3>Contact Me</h3>
-                    <form>
-                        <div class="mb-3">
+                    <form class="row g-3 my-2">
+                        <div class="col-md-6 col-lg-8">
                           <label for="name" class="form-label">Name</label>
                           <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
                         </div>
-                        <div class="mb-3">
+                        <div class="col-md-6 col-lg-8">
                           <label for="email" class="form-label">Email</label>
                           <input type="email" class="form-control" id="email">
                         </div>
-                        <div class="mb-3">
+                        <div class="col-lg-10">
                             <label for="message" class="form-label">Message</label>
                             <textarea type="email"  class="form-control" id="email" id="" cols="30" rows="10"></textarea>
                         </div>
-                        
+                        <div class="col-md-3">
                         <button type="submit" class="btn btn-primary" data-button="Green">Submit</button>
+                        </div>
                       </form>
             </div>
         </div>
