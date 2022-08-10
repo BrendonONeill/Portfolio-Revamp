@@ -24,7 +24,7 @@ body
     width: 100%;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: #D3D3D3;
+    background-color: #2f2f2f;
 }
 
 img
@@ -591,3 +591,159 @@ footer
     color: white;
     padding: 1rem;
 }
+
+
+
+
+
+/* ///////////////////Project Page////////////////////////// */
+
+.header-image
+{
+    background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0)),
+    url('/images/project-test.jpg');
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+
+
+.main-projects
+{
+    background-color: white;
+}
+
+.project-page-name
+{
+    max-width: 80%;
+    margin-inline: auto;
+    text-align: center;
+    padding: 3rem;
+}
+
+.project-page-name h1
+{
+    font-weight: bold;
+}
+
+.btn-github
+{
+    background-color: #333;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+}
+
+.btn-live
+{
+    background-color: var(--secondary-colour);
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+}
+
+.btn-video
+{
+    background-color: #FF0000;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+}
+
+.button-group
+{
+    max-width: 80%;
+    margin-inline: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+
+.project-heading-section
+{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-active-colour);
+    max-width: 60%;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border-right: 10px solid var(--primary-dark-colour);
+    border-left: 10px solid var(--primary-dark-colour);
+    color: #fff;
+    font-weight: bold;
+}
+
+.other-projects
+{
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.gallery-container
+{
+    background-color: #fff;
+    padding-top: 10rem;
+}
+
+.photo-grid
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  flex-basis: 30%;
+  gap: 1rem;
+  margin: 5rem auto;
+}
+
+
+.photo-grid-col
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 32%;
+    gap: 1.5rem;
+}
+
+.photo-grid-col img
+{
+    border-radius: 20px;
+}
+
+
+.lightbox{
+    position: fixed;
+    z-index: 5;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.lightbox img
+{
+    max-width: 50%;
+    max-height: 50%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.lightbox-active
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
