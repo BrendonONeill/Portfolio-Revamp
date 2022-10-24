@@ -18,4 +18,7 @@ As I improve my design of websites I want to give my design a more bold look.
 This is not hosted yet as Ihave to clean up my projects and sort out my designs for my gallery.
 
 ### Working on
-Cleaning up small bugs and sorting out projects pages and fill up my gallery with more designs.
+Working on Nav bug with the offcanvas and nav restructing.
+fix landing page background.
+clean up font problems.
+fix logo and layout problems
