@@ -4,20 +4,31 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Brendon O'Neill Portfoilo</title>
-        <meta name="description" content="">
+        <meta name="description" content="Hi, My Name is Brendon O'Neill. I am Front-end developer and Graphic Designer, I'm passionate about improving my development and design skills as well as teaching people about Web Development / Programming.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/mediaQ.css">
     </head>
     <body>
         <!-- Navbar Start -->
         <header>
-            <nav class="navbar fixed-top navbar-dark">
+            <nav class="container-lg navbar fixed-top navbar-dark">
                 <div class="container navbar-content">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler hide-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
+                    <div class="nav-list">
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#aboutme">About Me</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#design">Designs</a></li>
+                            <li><a href="#hobbies">Hobbies</a></li>
+                            <li><a href="#contactme">Contact Me</a></li>
+                        </ul>
+                    </div>
                     <div class="nav-logo">
                         <p>logo here</p>
                     </div>
@@ -34,12 +45,19 @@
                         <a class="nav-selection" href="#projects">Projects</a>
                         <a class="nav-selection" href="#design">Designs</a>
                         <a class="nav-selection" href="#hobbies">Hobbies</a>
-                        <a class="nav-selection" href="#form">Contact Me</a>
+                        <a class="nav-selection" href="#contactme">Contact Me</a>
                     </div>
                 </div>
                 <!-- off-canvas End and landing section Start -->
-            <div class="container-lg section-container heading-image">
+            <div class="container-lg section-container heading-image" id="hero">
                 <div class="landing-content">
+                    <div class="landing-links">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/brendon-o-neill/" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
+                            <li> <a href="https://github.com/BrendonONeill" target="_blank"> <i class="fab fa-github"></i> </a> </li> 
+                            <li> <a href=""> <i class="fas fa-file"></i> </a> </li>
+                        </ul>
+                    </div>
                 <div class="landing-content-text">
                     <p>Hi,</p>
                     <h1 class="header-name" data-colour="Green">I'm Brendon</h1>
@@ -57,16 +75,22 @@
 
         
         <!-- Landiing section End and About-me Start -->
-        <main>
+        <main id="aboutme">
             <div class="container-lg section-container about-me-content" data-bg='White'>
                     <div class="about-me-image">
                         <div class="image-border" data-border="top"></div>
                         <div class="image-border" data-border="bottom"></div>
-                        <img src="images/brendonnobg.png" alt="">
+                        <img src="images/brendonnobg.png" alt="Brendon O Neills portrait">
                     </div>
-                    <div class="about-me-information">
+                    <div  class="about-me-information">
                         <h2 class="section-heading">About me</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium est corporis consectetur modi aut, ratione nisi libero provident sint eos cumque similique officia, repudiandae iusto veritatis et fugit eligendi. Dolor, repellat. Sequi eum fugiat architecto numquam ut qui incidunt recusandae.</p>
+                        <p>Hi, My Name is Brendon O'Neill. I am Front-end developer and Graphic Designer, I'm passionate about improving my development and design skills as well as teaching people about Web Development / Programming.</p>
+                        <p> My College Qualifications:</p>
+                        <ul>
+                            <li>Bachelor of Science (Honours) Creative Computing, First Class Honours</li>
+                            <li>Bachelor of Science Multimedia Applications Development, Merit Grade 1</li>
+                            <li>QQI LEVEL 5 Multimedia Production, Distinction</li>
+                        </ul>
                     </div>
             </div>
          <!-- About-me End and Skillset Start -->   
@@ -80,7 +104,7 @@
                 <div class="grid-cards">
                     <div class="skill-card">
                         <div class="card-image">
-                            <img src="images/html5.png" alt="">
+                            <img src="images/html5.png" alt="html logo">
                         </div>
                         <div class="card-name">
                             <p>Html5</p>
@@ -88,7 +112,7 @@
                     </div>
                     <div class="skill-card">
                         <div class="card-image">
-                            <img src="images/css3.png" alt="">
+                            <img src="images/css3.png" alt="css logo">
                         </div>
                         <div class="card-name">
                             <p>CSS3</p>
@@ -96,7 +120,7 @@
                     </div>
                     <div class="skill-card">
                         <div class="card-image">
-                            <img src="images/sass.png" alt="">
+                            <img src="images/sass.png" alt="sass logo">
                         </div>
                         <div class="card-name">
                             <p>SASS</p>
@@ -104,7 +128,7 @@
                     </div>
                     <div class="skill-card">
                         <div class="card-image">
-                            <img src="images/javascript.png" alt="">
+                            <img src="images/javascript.png" alt="javascript logo">
                         </div>
                         <div class="card-name">
                             <p>JavaScript</p>
@@ -112,7 +136,7 @@
                     </div>
                     <div class="skill-card">
                         <div class="card-image">
-                            <img src="images/bootstrap-logo.svg" alt="">
+                            <img src="images/bootstrap-logo.svg" alt="bootstrap logo">
                         </div>
                         <div class="card-name">
                             <p>Bootstrap</p>
@@ -120,7 +144,7 @@
                     </div>
                     <div class="skill-card">
                         <div class="card-image">
-                            <img src="images/react.png" alt="">
+                            <img src="images/react.png" alt="react logo">
                         </div>
                         <div class="card-name">
                             <p>React</p>
@@ -128,7 +152,7 @@
                     </div>
                     <div class="skill-card">
                         <div class="card-image background-flip">
-                            <img src="images/128px-Node.js_logo.svg.png" alt="">
+                            <img src="images/128px-Node.js_logo.svg.png" alt="node js logo">
                         </div>
                         <div class="card-name">
                             <p>Node JS</p>
@@ -136,7 +160,7 @@
                     </div>
                     <div class="skill-card">
                         <div class="card-image">
-                            <img src="images/expressjs-ar21.svg" alt="">
+                            <img src="images/expressjs-ar21.svg" alt="express js logo">
                         </div>
                         <div class="card-name">
                             <p>Express</p>
@@ -144,7 +168,7 @@
                     </div>
                     <div class="skill-card">
                         <div class="card-image">
-                            <img src="images/mongodb.png" alt="">
+                            <img src="images/mongodb.png" alt="mongodb logo">
                         </div>
                         <div class="card-name">
                             <p>Mongo DB</p>
@@ -287,29 +311,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="images/ammar-abu-zaid-AP8lQ6de8FA-unsplash.jpg" alt="">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-name">
-                                <h3>Flash Card</h3>
-                            </div>
-                            <div class="project-tools">
-                                    <p>React</p>
-                                    <p>JSX</p>
-                                    <p>CSS3</p>
-                                    <p>SASS</p>
-                                    <p>JavaScript</p>
-                                    <P>Firebase</P>
-                            </div>
-                            <div class="project-button">
-                                <button class="project-button-styles">More Information</button>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="project">
                         <div class="project-image">
                             <img src="images/ammar-abu-zaid-AP8lQ6de8FA-unsplash.jpg" alt="">
@@ -350,26 +351,6 @@
                         </div>
                     </div>
 
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="images/ammar-abu-zaid-AP8lQ6de8FA-unsplash.jpg" alt="">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-name">
-                                <h3>Footy-News</h3>
-                            </div>
-                            <div class="project-tools">
-                                    <p>React</p>
-                                    <P>JSX</P>
-                                    <p>CSS3</p>
-                                    <P>JavaScript</P>
-
-                            </div>
-                            <div class="project-button">
-                                <button class="project-button-styles">More Information</button>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="project">
                         <div class="project-image">
@@ -391,12 +372,34 @@
                         </div>
                     </div>
 
+                    <div class="project">
+                        <div class="project-image">
+                            <img src="images/ammar-abu-zaid-AP8lQ6de8FA-unsplash.jpg" alt="">
+                        </div>
+                        <div class="project-details">
+                            <div class="project-name">
+                                <h3>Flash Card</h3>
+                            </div>
+                            <div class="project-tools">
+                                    <p>React</p>
+                                    <p>JSX</p>
+                                    <p>CSS3</p>
+                                    <p>SASS</p>
+                                    <p>JavaScript</p>
+                                    <P>Firebase</P>
+                            </div>
+                            <div class="project-button">
+                                <button class="project-button-styles">More Information</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </main>
         <!-- Project End and Design Start -->
-        <main>
+        <main id="design">
             <div class="container-lg section-container" data-bg="Purple">
                 <div class="section-heading">
                     <h2>Design</h2>
@@ -406,11 +409,11 @@
                             <img src="/images/disign.png" alt="" loading="lazy">
                     </div>
                         <div class="design-box-information-text">
-                            <p>I have been working with designed products for many years before I became a front-end developer blah blah here is an example of my portfolio of design work</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, officiis.</p>
+                            <p>I have been working with design products like Adobe Creative Cloud for 7 years. Within those years I have learned how to manipulate images in Photoshop, Create designs in Illustrator, produce videos with Premiere Pro and many other media skills.</p>
+                            <p>For my Design Portfoilo Gallery I have focused on my image manipulation and design skills, this is a collection of my recent work that will be updated with new pieces as they are created. </p>
                         </div>
                         <div class="design-box-information-button">
-                            <a class="design-button" href="">Enter</a>
+                            <a class="design-button" href="/design-gallery.html">Enter</a>
                      </div>
                 </div>
 
@@ -418,7 +421,7 @@
             </div>
         </main>
         <!-- Design End and Hobbies Start -->
-        <section>
+        <section id="hobbies">
             <div class="container-lg section-container" data-bg='White'>
                 <div class="section-heading">
                     <h2>Hobbies</h2>
@@ -428,35 +431,36 @@
                     <div class="hobby-box">
                         <div class="hobby-text">
                             <h3 class="hobby-name">Gaming</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nam inventore sint veniam quasi nisi quae sequi reprehenderit labore excepturi.</p>
+                            <p>After a long day of development or design I like to sit down and relax playing games to reset and to connect with other people online.</p>
                         </div>
                     </div>
 
                     <div class="hobby-box">
                         <div class="hobby-text">
                             <h3 class="hobby-name">Programming</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nam inventore sint veniam quasi nisi quae sequi reprehenderit labore excepturi.</p>
+                            <p>I find the enjoyment of creating something to make things easier to do is what I love about programming. I mainly develope in JavaScript but as I become more confident in Python I hope to use both more within projects.</p>
                         </div>
                     </div>
 
                     <div class="hobby-box">
                         <div class="hobby-text">
                             <h3 class="hobby-name">Language Study</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nam inventore sint veniam quasi nisi quae sequi reprehenderit labore excepturi.</p>
+                            <p>This is a recent hobby I have picked up over the pandemic as I wanted to keep my mind buzy so I picked up Japanese as a lot of my favourite media are Japanese. はじめまして,私はブレンダンです.</p>
                         </div>
                     </div>
 
                     <div class="hobby-box">
                         <div class="hobby-text">
                             <h3 class="hobby-name">Drawing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nam inventore sint veniam quasi nisi quae sequi reprehenderit labore excepturi.</p>
+                            <p>I love to draw when I have creative block and just can't decide on the best method of creating something. I not great at drawing but it allows me to get my creative juices flowing and clears my mind to make better choices. </p>
                         </div>
                     </div>
                     
                 </div>
             </div>
         </section>
-        <section>
+         <!-- Hobbies End and Contact Me Start -->
+        <section id="contactme">
             <div class="container-lg section-container" data-bg='Dark-purple'>
                 <div class="form-card align-items-center my-5">
                     <h3>Contact Me</h3>
@@ -480,7 +484,7 @@
             </div>
         </div>
         </section>
-        <footer>
+        <footer class="container-lg">
             <p>Brendon O'Neill</p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
