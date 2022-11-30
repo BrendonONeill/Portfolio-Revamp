@@ -18,8 +18,8 @@ As I improve my design of websites I want to give my design a more bold look.
 This is not hosted yet as Ihave to clean up my projects and sort out my designs for my gallery.
 
 ### Working on
+Cleaning up UI and preparing for deployment with projects. 
 I need to work on the clean up of the code as it was updated over months and my way of devlopment has changed so I need to clean up and sort out the files.
-I also in the future want to remove the bootstrap code as it becoming more of a hassle then a supporting net.
 A few Nav links need to be re-written and sort out project links and buttons.
-I need to also focus on the performance of the page like change uimages format and adding better accessibility.
+I need to also focus on the performance of the page like change images format and adding better accessibility.
 
