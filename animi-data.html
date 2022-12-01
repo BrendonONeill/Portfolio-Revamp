@@ -16,52 +16,35 @@
         <header>
             <nav class="container-lg navbar fixed-top navbar-dark">
                 <div class="container navbar-content">
-                    <button class="navbar-toggler hide-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    <div class="nav-list">
-                        <ul>
-                            <li><a href="#hero">Home</a></li>
-                            <li><a href="#aboutme">About Me</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#design">Designs</a></li>
-                            <li><a href="#hobbies">Hobbies</a></li>
-                            <li><a href="#contactme">Contact Me</a></li>
-                        </ul>
+                    <div class="nav-page-project">
+                            <a class="nav-home" href="index.html">Home</a>  
                     </div>
                     <div class="nav-logo">
                         <p>logo here</p>
                     </div>
                 </div>
               </nav>
-              <!-- Navbar End and off-canvas Start -->
-              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                  <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                    <div class="offcanvas-body">
-                        <a class="nav-selection" href="#hero">Home</a>
-                        <a class="nav-selection" href="#aboutme">About Me</a>
-                        <a class="nav-selection" href="#projects">Projects</a>
-                        <a class="nav-selection" href="#design">Designs</a>
-                        <a class="nav-selection" href="#hobbies">Hobbies</a>
-                        <a class="nav-selection" href="#contactme">Contact Me</a>
-                    </div>
-                </div>
-
-            <div class="header-image container">
-
+            <div class="header-image header-anime container">
             </div>
         </header>
         <!--Main-->
         <main class="container main-projects">
+            <div class="project-page-buttons">
+                <p>Projects</p>
+                <ul>
+                    <li><a href="gamer-data.html">1</a></li>
+                    <li><a href="bug-tracking.html">2</a></li>
+                    <li class="button-padding-active">3</li>
+                    <li><a href="portfolio.html">4</a></li>
+                    <li><a href="final-fantasy.html">5</a></li>
+                </ul>
+            </div>
             <div class="project-page-name">
             <h1>Animi-Data</h1>
             </div>
             <div class="button-group container">
-                <a href="" class="btn btn-github"><i class="fab fa-github"></i> GitHUB</a>
-                <a href="" class="btn btn-live"><i class="fas fa-eye"></i> Live Preview</a>
-                <a href="" class="btn btn-video"><i class="fab fa-youtube"></i> Video Preview</a>
+                <a href="https://github.com/BrendonONeill/AnimeList-React-App" target=”_blank” class="btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://animi-data.onrender.com/" target=”_blank” class="btn btn-live"><i class="fas fa-eye"></i> Live Preview</a>
             </div>
             <div class="description">
                 <div class="project-heading-section">
@@ -103,15 +86,29 @@
                 <p>This is not hosted yet as im still work out some bugs and UI issues</p>
                 </div>
             </div>
-
-            <div class="other-projects">
-                <a href="" class="btn btn-projects"><i class="fas fa-chevron-circle-left"></i> Last Project</a>
-                <a href="" class="btn btn-projects">Next Project <i class="fas fa-chevron-circle-right"></i></a>
-            </div>
         </main>
         <footer class="container-lg">
-            <h4>Brendon</h4>
-        </footer class="container-fluid" >
+            <div class="footer-section">
+                <p class="footer-list-heading">Projects</p>
+                <ul>
+                    <li> <a href="gamer-data.html">Gamer-Data</a></li>
+                    <li> <a href="bug-tracking.html">Bug Tracking App</a> </li>
+                    <li> <a href="animi-data.html">Animi-Data</a></li>
+                    <li> <a href="portfolio.html">Portfoilo</a></li>
+                    <li><a href="final-fantasy.html">Final Fantasy VII Website</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul class="social">
+                    <li><a href="https://www.linkedin.com/in/brendon-o-neill/" target="_blank"> <i class="fab fa-linkedin"></i> GitHub</a></li>
+                    <li> <a href="https://github.com/BrendonONeill" target="_blank"> <i class="fab fa-github"></i> LinkedIn</a> </li> 
+                    <li> <a href=""> <i class="fas fa-file"></i> CV</a> </li>
+                </ul>
+            </div>
+            <div class="footer-section footer-name">
+                <p>Brendon O'Neill 2022</p>
+            </div>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="" async defer></script>
     </body>

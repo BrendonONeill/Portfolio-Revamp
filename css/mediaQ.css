@@ -1,4 +1,4 @@
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 480px) {
 
     .nav-list
     {
@@ -47,8 +47,7 @@
 
     .project{
         height: 440px;
-        width: 295px;
-        
+        width: 295px; 
     }
 
     .project-tools p 
@@ -159,14 +158,10 @@
         display: none;
     }
 
-    .nav-list
-    {
-        display: block;
-    }
 
     .nav-list ul li a
     {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .landing-content
@@ -459,6 +454,12 @@
     .design-box-information-button
     {
         grid-column: 1/3;
+    }
+
+    .button-group
+    {
+        flex-flow: row;
+        align-items: center;
     }
     
     
