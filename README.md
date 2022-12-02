@@ -22,4 +22,5 @@ Cleaning up UI and preparing for deployment with projects.
 I need to work on the clean up of the code as it was updated over months and my way of devlopment has changed so I need to clean up and sort out the files.
 A few Nav links need to be re-written and sort out project links and buttons. 
 I need to also focus on the performance of the page like change images format and adding better accessibility. 
+Sort out responsive design. 
 
