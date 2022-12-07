@@ -240,7 +240,7 @@ nav
 
 .heading-image
 {
-    background-image: url('/images/mainbg.svg');
+    background-image: url(/images/mainbg.svg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
