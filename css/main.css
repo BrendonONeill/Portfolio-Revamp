@@ -1005,6 +1005,15 @@ footer
     color: white;
 }
 
+.warning-div
+{
+    background-color: #AD0000;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
 .deployment
 {
     padding-bottom: 5rem;
