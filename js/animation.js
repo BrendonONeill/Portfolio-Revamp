@@ -1,3 +1,4 @@
+"use strict";
 const textDisplay = document.querySelector("#animatedText");
 const textArray = ["Front-end devloper", "Graphic Designer"];
 let currentText = [" "];
