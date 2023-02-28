@@ -901,6 +901,14 @@ footer
     background-repeat: no-repeat;
 }
 
+.header-kanji
+{
+    background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0)),
+    url(../images/webp/kanji2.webp);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
 
 .project-page-buttons
 {
