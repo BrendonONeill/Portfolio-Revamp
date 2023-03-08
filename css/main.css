@@ -18,6 +18,7 @@
     --primary-nav-colour:#1f1f1f;
     --secondary-active-colour:#E67240;
     --secondary-white:rgb(223, 223, 223);
+    --shadow-back: 0px 8px 24px rgb(0, 0, 0, 0.40);
 }
 
 body
@@ -30,7 +31,7 @@ body
 
 img
 {
-    max-width: 100%;
+    width: 100%;
 }
 
 .section-container
@@ -360,7 +361,7 @@ nav
     text-decoration: none;
     cursor: pointer;
     border-radius: 0.40rem;
-    box-shadow: 0.313rem 0.313rem 1rem var(--primary-dark-colour);
+    box-shadow: var(--shadow-back);
 }
 
 .header-button:hover
@@ -369,7 +370,7 @@ nav
     color: white;
     position: relative;
     top: 5px;
-    box-shadow: 0.313rem 0.313rem 4rem var(--primary-dark-colour);
+    box-shadow: var(--shadow-back);
 }
 
 
@@ -430,7 +431,7 @@ nav
     border-top: 20px solid var(--primary-colour);
     font-size: 1rem;
     line-height: 1.7;
-    box-shadow: 5px 5px 30px black;
+    box-shadow: var(--shadow-back);
 }
 
 .about-me-information ul
@@ -468,41 +469,44 @@ nav
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 12px 12px 5px 5px;
-    box-shadow: 2px 2px 10px rgb(57, 57, 57);
+    box-shadow: var(--shadow-back);
     border: 1px solid var(--primary-dark-colour);
     margin: 0 auto;
 }
 
 .card-image
 {
- max-width: 100%;
- max-height: 50%;
- padding: 5px;
  border-bottom: 2px solid var(--primary-dark-colour);
  background-color: white;
  border-radius: 12px 12px 0 0;
+ min-height: 80px;
+ display: flex;
+ flex-basis: 50%;
+ justify-content: center;
+ align-items: center;
 }
 
-.card-image img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
 .card-name
 {
     display: flex;
+    flex-basis: 50%;
     justify-content: center;
     align-items: center;
     font-size: clamp(0.8rem, 1rem, 1.2rem);
     font-weight: bold;
-    max-width: 100%;
-    height: 40%;
     color: white;
     text-align: center;
 }
+
+.card-image img
+{
+    width: 90px;
+    height: 70px;
+    object-fit: contain;
+}
+
+
 
 /* Project section */
 
@@ -656,7 +660,7 @@ nav
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 5px 5px 30px 5px var(--primary-dark-colour);
+    box-shadow: var(--shadow-back);
     padding-block: 1.2rem;
     padding-inline: 1.5rem;
     font-size: 1rem;
