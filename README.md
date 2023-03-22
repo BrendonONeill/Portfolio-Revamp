@@ -23,3 +23,5 @@ I need to work on the clean up of the code as it was updated over months and my 
 I need to also focus on the performance of the page like change images format and adding better accessibility. 
 Sort out responsive design.
 Cleaning up vectors for gallery and finishing logo design
+adding dark mode. 
+
