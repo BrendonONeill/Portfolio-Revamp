@@ -18,10 +18,8 @@ As I improve my design of websites I want to give my design a more bold look.
 Deployed on Github Pages.
 
 ### Working on
-Cleaning up UI and preparing for deployment with projects. 
-I need to work on the clean up of the code as it was updated over months and my way of devlopment has changed so I need to clean up and sort out the files.
-I need to also focus on the performance of the page like change images format and adding better accessibility. 
-Sort out responsive design.
-Cleaning up vectors for gallery and finishing logo design
-adding dark mode ( working around that it's a static website and to apply theme chnage in javascript ).
+I need to work on the clean up of the code as it was updated over months and my way of devlopment has changed so I need to clean up and sort out the files. 
+Cleaning up vectors for gallery and finishing logo design. 
+need to clean up the lightbox code. 
+
 
