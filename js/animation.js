@@ -78,7 +78,7 @@ function themeChange() {
     body.style.backgroundColor = "#fff";
     rootVar.style.setProperty("--project-bg", "#e6e6e6");
     if (document.title === "Brendon O'Neill Portfolio") {
-      headingImage.style.backgroundImage = "url(../images/lightbg.png)";
+      headingImage.style.backgroundImage = "url(./images/lightbg.png)";
     }
   } else {
     image.src = "images/moon.svg";
@@ -93,7 +93,7 @@ function themeChange() {
     body.style.backgroundColor = "#2f2f2f";
     rootVar.style.setProperty("--project-bg", "#252627");
     if (document.title === "Brendon O'Neill Portfolio") {
-      headingImage.style.backgroundImage = "url(../images/darkbg.png)";
+      headingImage.style.backgroundImage = "url(./images/darkbg.png)";
     }
   }
 }
