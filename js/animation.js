@@ -69,34 +69,15 @@ function themeChange() {
     image.src = "images/sun.svg";
     darkToggle.classList.toggle("toggle-light");
     darkToggle.classList.remove("toggle-dark");
-    rootVar.style.setProperty("--primary-colour", "#E6E6E6");
-    rootVar.style.setProperty("--text-colour", "#000");
-    rootVar.style.setProperty("--black-bg", "#b79ced");
-    rootVar.style.setProperty("--light-black-bg", "#dec0f1");
-    rootVar.style.setProperty("--primary-nav-colour", "#8672ad");
-    rootVar.style.setProperty("--card-image-bg", "#ced4da");
-    body.style.backgroundColor = "#fff";
-    rootVar.style.setProperty("--project-bg", "#e6e6e6");
-    if (document.title === "Brendon O'Neill Portfolio") {
-      headingImage.style.backgroundImage = "url(./images/lightbg.png)";
-    }
+    document.documentElement.setAttribute("data-theme", "light");
   } else {
     image.src = "images/moon.svg";
     darkToggle.classList.toggle("toggle-dark");
     darkToggle.classList.remove("toggle-light");
-    rootVar.style.setProperty("--primary-colour", "#7223c7");
-    rootVar.style.setProperty("--text-colour", "#fff");
-    rootVar.style.setProperty("--black-bg", "#252627");
-    rootVar.style.setProperty("--light-black-bg", "#303233");
-    rootVar.style.setProperty("--primary-nav-colour", "#1f1f1f");
-    rootVar.style.setProperty("--card-image-bg", "#fff");
-    body.style.backgroundColor = "#2f2f2f";
-    rootVar.style.setProperty("--project-bg", "#252627");
-    if (document.title === "Brendon O'Neill Portfolio") {
-      headingImage.style.backgroundImage = "url(./images/darkbg.png)";
-    }
+    document.documentElement.setAttribute("data-theme", "dark");
   }
 }
+
 if (document.title === "Brendon O'Neill Portfolio") {
   textLoop();
 }
