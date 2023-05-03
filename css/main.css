@@ -1744,8 +1744,7 @@ footer
 
 .about-me-image
 {
-    max-width: 30%;
-   
+    max-width: 50%;  
 }
 
 .about-me-information
@@ -1866,6 +1865,11 @@ footer
             top: 55%;
             transform: translate(-50%, -55%);
         }
+    
+    .about-me-image
+    {
+        max-width: 80%;
+    }
 
     .about-me-information
     {
