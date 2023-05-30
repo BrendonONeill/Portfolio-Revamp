@@ -79,7 +79,8 @@ p {
 
 
 
-header {
+
+.main-header {
     min-height: 100vh;
     background-image: var(--backgroundimg);
     background-size: cover;
@@ -89,6 +90,7 @@ header {
 
 nav {
     background-color: var(--nav-colour);
+    top: 0;
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -178,7 +180,98 @@ nav {
     left: 0;
 }
 
+.offcanvas-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
+.offcanvas-container {
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    width: 75%;
+    height: 100vh;
+    left: 0;
+    background-color: var(--light-black-bg);
+    z-index: 102;
+    display: flex;
+    flex-flow: column;
+    border-radius: 0 10px 10px 0;
+}
+
+.offcanvas-close-container {
+    flex-basis: 10%;
+    border-radius: 0 10px 0 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--nav-colour);
+}
+
+.offcanvas-close-container button {
+    border-radius: 5px;
+    border: 3px solid var(--text);
+    color: var(--text);
+    background-color: transparent;
+    padding: 0.4rem;
+}
+
+.offcanvas-list-container {
+    flex-basis: 80%;
+}
+
+.offcanvas-list-container ul {
+    padding: 1rem;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+
+.offcanvas-list-container ul li a {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 2rem;
+}
+
+.offcanvas-list-container ul li:last-child a {
+
+    background-color: #11C9B3;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    color: var(--primary-dark-colour);
+    font-weight: bold;
+    border: none;
+}
+
+.offcanvas-list-container ul a:hover {
+    color: var(--secondary-active-colour);
+    position: relative;
+}
+
+.offcanvas-list-container ul li:last-child:hover a {
+    background-color: var(--secondary-active-colour);
+    color: var(--text);
+}
+
+.offscreen {
+    left: -100%;
+}
+
+.show {
+    display: block;
+}
 
 
 .hero-container-text {
@@ -715,8 +808,232 @@ footer {
     font-size: 2rem;
 }
 
+/* Projects pages */
+
+.nav-project-home {
+    flex-basis: 33%;
+}
+
+.nav-project-home ul {
+    list-style-type: none;
+}
+
+.nav-project-home ul a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projects-container {
+    width: 100%;
+    background-color: var(--project-bg);
+}
+
+.projects-buttons-container {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.projects-buttons-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+.projects-buttons-container ul a {
+    color: #000;
+    font-weight: bold;
+    display: block;
+    flex-basis: 20%;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-colour);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.button-padding-active {
+    color: #000;
+    font-weight: bold;
+    display: block;
+    flex-basis: 10%;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-active-colour);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.header-project-gamer {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+        url(../images/webp/projects/gamer2.webp);
+    background-position: top;
+}
+
+.header-project-kanji {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+        url(../images/webp/kanji2.webp);
+    background-position: top;
+}
+
+.header-project-bug {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+        url(../images/webp/projects/bugheader.webp);
+    background-position: center;
+}
+
+.header-project-animi {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+        url(../images/webp/projects/animeheader.webp);
+    background-position: top;
+}
+
+.header-project-port {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+        url(../images/webp/projects/portheader.webp);
+    background-position: top;
+}
+
+.header-project-ff7 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+        url(../images/webp/projects/ff7header.webp);
+    background-position: bottom;
+}
+
+.header-project-ui {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+        url(../images/webp/projects/card-header.webp);
+    background-position: bottom;
+}
+
+.header-project {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+    height: 200px;
+}
+
+.live-buttons {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.btn-github {
+    background-color: #333;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid white;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-github:hover {
+    background-color: var(--secondary-active-colour);
+    color: var(--text);
+}
+
+.btn-live {
+    background-color: var(--secondary-colour);
+    font-weight: bold;
+    color: var(--primary-dark-colour);
+    padding: 1rem;
+    width: 50%;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-live:hover {
+    background-color: #E67240;
+    color: var(--white);
+}
+
+.project-sections {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-sections h2 {
+    padding: 0.5rem;
+    width: 90%;
+    color: #000;
+    text-align: center;
+    background-color: var(--secondary-active-colour);
+    border-radius: 5px;
+
+}
+
+.project-sections p {
+    padding-inline: 1rem;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.project-sections ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.project-sections ul li {
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-active-colour);
+    border-radius: 5px;
+}
 
 
+
+/* Gallery */
+
+.gallery-header {
+    padding-top: 5.5rem;
+}
+
+.photo-grid {
+    display: flex;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    flex-basis: 30%;
+    gap: 1rem;
+}
+
+
+.photo-grid-col {
+    display: flex;
+    flex-direction: column;
+    max-width: 32%;
+    gap: 1.5rem;
+}
+
+.photo-grid-col img {
+    border-radius: 10px;
+}
+
+.vector-bg {
+    background-color: rgb(43, 43, 43);
+}
 
 
 
@@ -940,8 +1257,6 @@ footer {
     .grid-skills-container {
         grid-template-columns: repeat(10, 1.2fr);
     }
-
-
 
     .grid-projects-container {
         grid-template-columns: repeat(3, 1fr);
