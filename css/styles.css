@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root,
 :root[data-theme="dark"] {
     --primary-colour: #7223c7;
@@ -31,7 +35,7 @@
 
     --black-v2: #b79ced;
     --light-black-bg: #dec0f1;
-
+    --bg-colour: #fff;
     --primary-colour: #E6E6E6;
     --secondary-colour: #11C9B3;
     --secondary-active-colour: #E67240;
@@ -87,6 +91,7 @@ p {
     background-position: top;
     background-repeat: no-repeat;
 }
+
 
 nav {
     background-color: var(--nav-colour);
@@ -527,7 +532,7 @@ nav {
     text-align: center;
 }
 
-.projects-container {
+.projects-contain {
     background-color: var(--black-v2);
 }
 
@@ -762,13 +767,13 @@ footer {
     color: var(--white);
     padding: 1rem;
     display: flex;
-    flex-flow: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
 }
 
 .footer-section {
-    flex-basis: 30%;
+    flex-basis: 50%;
     padding: 1rem 1rem 3rem 1rem;
     color: var(--text);
 }
@@ -777,6 +782,7 @@ footer {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-basis: 50%;
 }
 
 .footer-section ul a {
@@ -790,14 +796,14 @@ footer {
 
 .social {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
     flex-flow: column;
     font-size: 1.4rem;
 }
 
 .footer-name {
-    width: 100%;
+    flex-basis: 100%;
     text-align: center;
     font-size: 1.4rem;
     font-weight: bold;
@@ -809,6 +815,19 @@ footer {
 }
 
 /* Projects pages */
+
+.projects-nav {
+    padding: 0.5rem 2rem;
+}
+
+.projects-nav>.nav-logo-container,
+.projects-nav>.nav-darkmode-container {
+    flex-basis: 33%;
+}
+
+.projects-nav>.nav-darkmode-container {
+    justify-content: center;
+}
 
 .nav-project-home {
     flex-basis: 33%;
@@ -844,6 +863,7 @@ footer {
     list-style-type: none;
     gap: 2rem;
     justify-content: center;
+    width: 80%;
 
 }
 
@@ -863,6 +883,7 @@ footer {
     color: #000;
     font-weight: bold;
     display: block;
+    max-width: 40px;
     flex-basis: 10%;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -984,6 +1005,8 @@ footer {
     padding-inline: 1rem;
     text-align: left;
     align-self: flex-start;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .project-sections ul {
@@ -1000,6 +1023,16 @@ footer {
     border-radius: 5px;
 }
 
+.pas {
+    background-color: #11C9B3;
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
 
 
 /* Gallery */
@@ -1008,9 +1041,32 @@ footer {
     padding-top: 5.5rem;
 }
 
+
+.design-header {
+    padding-block: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.design-header h1 {
+
+    width: 90%;
+    text-align: center;
+}
+
+.gallery-h2 {
+    margin: 0 auto;
+    background-color: var(--secondary-active-colour);
+    padding: 1rem;
+    color: #000;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
 .photo-grid {
     display: flex;
-    padding: 1rem;
+    padding: 1.5rem;
     padding-bottom: 5rem;
     flex-direction: row;
     justify-content: space-between;
@@ -1035,6 +1091,29 @@ footer {
     background-color: rgb(43, 43, 43);
 }
 
+.lightbox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.lightbox-img {
+    border-radius: 5px;
+    background-color: rgb(43, 43, 43);
+}
+
+.hide {
+    display: none;
+}
+
+
 
 
 /* Media Queries */
@@ -1046,8 +1125,9 @@ footer {
         padding-inline: 2rem;
     }
 
-    .nav-darkmode-container {
+    .projects-nav>.nav-darkmode-container {
         padding-inline: 2rem;
+        justify-content: flex-end;
     }
 
     .hero-container-text p {
@@ -1066,14 +1146,19 @@ footer {
         max-width: 45%;
     }
 
-
-
     .grid-skills-container {
         grid-template-columns: repeat(4, 1fr);
     }
 
     .design-img {
         max-width: 50%;
+    }
+
+
+    .live-buttons {
+        margin: 0 auto;
+        width: 80%;
+        flex-flow: row;
     }
 
     .section-header,
@@ -1085,21 +1170,27 @@ footer {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023px) {
 
 
     .spacer,
     header,
     footer,
-    nav {
+    nav,
+    .lightbox,
+    .projects-container {
         width: 920px;
         margin: 0 auto;
     }
 
     nav {
-        padding: 2rem;
+        padding: 1rem;
     }
 
+
+    .live-buttons {
+        width: 50%;
+    }
 
     .nav-burger-container {
         display: none;
@@ -1144,18 +1235,23 @@ footer {
         color: var(--text);
     }
 
-
-
-
     .nav-logo-container {
         order: 3;
         justify-content: flex-end;
         flex-basis: 10%;
     }
 
+    .header-project {
+        height: 300px;
+    }
+
     .nav-darkmode-container {
         order: 2;
         flex-basis: 10%;
+    }
+
+    .projects-nav>.nav-darkmode-container {
+        justify-content: center;
     }
 
     .hero-container-text {
@@ -1165,15 +1261,15 @@ footer {
     }
 
     .hero-container-text p {
-        font-size: 3.6rem;
+        font-size: 3.3rem;
     }
 
     .hero-name {
-        font-size: 4.4rem;
+        font-size: 4.2rem;
     }
 
     .hero-title {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
     }
 
     .hero-container-button {
@@ -1213,6 +1309,14 @@ footer {
         font-size: 1.2rem;
     }
 
+    .project-sections h2 {
+        width: 60%;
+    }
+
+    .gallery-h2 {
+        width: 60%;
+    }
+
     footer {
         flex-flow: row;
         align-items: center;
@@ -1224,8 +1328,18 @@ footer {
     .spacer,
     header,
     footer,
-    nav {
+    nav,
+    .lightbox,
+    .projects-container {
         width: 1200px;
+    }
+
+    .live-buttons {
+        width: 40%;
+    }
+
+    .lightbox-img {
+        width: 50%;
     }
 
     .nav-list-container ul li a {
@@ -1268,6 +1382,10 @@ footer {
 
     .design-text {
         max-width: 60%;
+    }
+
+    .pas {
+        width: 60%;
     }
 }
 

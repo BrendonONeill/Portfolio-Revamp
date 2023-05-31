@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -17,14 +17,14 @@
 
 <body>
     <header class="gallery-header">
-        <nav>
+        <nav class="projects-nav">
             <div class="nav-project-home">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                 </ul>
             </div>
             <div class="nav-logo-container">
-                <a><img height="564" width="494" src="./images/webp/logo.webp" alt="website logo"></a>
+                <a href="index.html"><img height="564" width="494" src="./images/webp/logo.webp" alt="website logo"></a>
             </div>
             <div class="nav-darkmode-container">
                 <button class="dark-mode-button" aria-label="dark mode toggle">
@@ -36,9 +36,14 @@
         </nav>
     </header>
     <main class="projects-container">
-
+        <div class="lightbox hide">
+            <img class="lightbox-img" src="" alt="">
+        </div>
+        <div class="design-header">
+            <h1>Design Gallery</h1>
+        </div>
         <div class="photoshop">
-            <h2 class="project-heading-section">Photoshop</h2>
+            <h2 class="gallery-h2">Photoshop</h2>
             <div class="photo-grid">
                 <div class="photo-grid-col">
                     <img src="./images/webp/photoshop/breath.webp" alt="text surrounded by leaves">
@@ -64,7 +69,7 @@
             </div>
         </div>
         <div class="Illustrator">
-            <h2 class="project-heading-section">Illustrator</h2>
+            <h2 class="gallery-h2">Illustrator</h2>
             <div class="photo-grid">
                 <div class="photo-grid-col">
                     <img loading="lazy" class="vector-bg" src="./images/webp/illustrator/logo.webp"
@@ -125,6 +130,7 @@
         </div>
     </footer>
     <script src="js/indexAnimation.js" async defer></script>
+    <script src="js/lightbox.js"></script>
 </body>
 
 </html>
