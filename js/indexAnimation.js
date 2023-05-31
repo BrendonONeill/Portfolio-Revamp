@@ -7,7 +7,7 @@ const body = document.body;
 const headingImage = document.querySelector(".heading-image");
 
 // offcanvas
-const canvasbut = document.querySelector("#offcanvas-button")
+const canvasbut = document.querySelectorAll(".offcanvas-close")
 const navbut = document.querySelector(".nav-burger")
 const canvascontain = document.querySelector(".offcanvas-container")
 const canvasbg = document.querySelector(".offcanvas-bg")
@@ -86,12 +86,15 @@ function themeChange() {
 
 if (document.title === "Brendon O'Neill's Portfolio") {
   textLoop();
-}
 
-
-canvasbut.addEventListener("click", () => {
-  canvascontain.classList.add("offscreen")
-  canvasbg.classList.remove("show")
+canvasbut.forEach(c => {
+  c.addEventListener("click", () => {
+    setTimeout(() => {
+      canvascontain.classList.add("offscreen")
+      canvasbg.classList.remove("show")
+    }, 500)
+    
+})
 })
 
 canvasbg.addEventListener("click", () => {
@@ -104,3 +107,4 @@ navbut.addEventListener("click", () => {
   canvascontain.classList.remove("offscreen")
   canvasbg.classList.add("show")
 })
+}
