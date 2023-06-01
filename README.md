@@ -62,10 +62,10 @@ I learnt a lot about Accessibility and understanding validation (Like your not m
 
 - Add more projects and designs
 - Make more custom styled cards to show off my css
-- I hope to be able to remove the bootstrap containers
+
 
 ## Working on
 
-- Cleaning up old CSS clashing with new CSS
+
 - Making the site more accessible
-- Fixing Bugs
+
