@@ -1109,6 +1109,35 @@ footer {
     background-color: rgb(43, 43, 43);
 }
 
+.thanks {
+    background-color: var(--light-black-bg);
+    display: flex;
+    flex-flow: column;
+    padding: 4rem;
+    padding-top: 10rem;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.thanks a {
+    background-color: var(--secondary-colour);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.thanks img {
+    position: absolute;
+    top: 20px;
+    width: 100px;
+    left: 20px;
+}
+
 .hide {
     display: none;
 }
@@ -1178,6 +1207,7 @@ footer {
     footer,
     nav,
     .lightbox,
+    .thanks,
     .projects-container {
         width: 920px;
         margin: 0 auto;
