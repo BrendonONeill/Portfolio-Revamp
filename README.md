@@ -69,3 +69,6 @@ I learnt a lot about Accessibility and understanding validation (Like your not m
 
 - Making the site more accessible
 
+## Known Bugs
+- gallery image need sorting out 
+
