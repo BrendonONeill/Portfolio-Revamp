@@ -59,6 +59,7 @@ I have re-created this site many times as I have improved my HTML & CSS skills a
 I learnt a lot about Accessibility and understanding validation (Like your not meant to put px on images in html).
 
 ## Potential future features
+- Clean up next js project and add to projects. 
 
 - Add more projects and designs
 - Make more custom styled cards to show off my css
