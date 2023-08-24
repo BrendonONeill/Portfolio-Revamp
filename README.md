@@ -58,6 +58,9 @@ I have re-created this site many times as I have improved my HTML & CSS skills a
 
 I learnt a lot about Accessibility and understanding validation (Like your not meant to put px on images in html).
 
+## Working on
+Updating the bug tracking app with the new front end. 
+
 ## Potential future features
 - Clean up next js project and add to projects. 
 
