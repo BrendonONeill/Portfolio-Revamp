@@ -910,6 +910,12 @@ footer {
     background-position: center;
 }
 
+.header-project-bug-v2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+        url(../images/webp/projects/porject-bug.webp);
+    background-position: top;
+}
+
 .header-project-animi {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
         url(../images/webp/projects/animeheader.webp);
