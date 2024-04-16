@@ -29,7 +29,7 @@
             <div class="nav-darkmode-container">
                 <button class="dark-mode-button" aria-label="dark mode toggle">
                     <span class="dark-mode-toggle toggle-dark">
-                        <img class="image-toggle" src="images/moon.svg" alt="dakrmode indicator" width="15" height="15">
+                        <img class="image-toggle" src="images/moon.svg" alt="darkmode indicator" width="15" height="15">
                     </span>
                 </button>
             </div>
@@ -61,16 +61,20 @@
             </ul>
         </div>
         <div class="live-buttons">
-            <a href="https://github.com/BrendonONeill/AnimeList-React-App" target=”_blank” class="btn btn-github"><i
+            <a href="https://github.com/BrendonONeill/Animi-Data-v2" target=”_blank” class="btn btn-github"><i
                     class="fab fa-github"></i> GitHub</a>
-            <a href="https://animi-data.onrender.com/" target=”_blank” class="btn btn-live"><i class="fas fa-eye"></i>
+            <a href="https://animi-data-v2.onrender.com/" target=”_blank” class="btn btn-live"><i
+                    class="fas fa-eye"></i>
                 Live Preview</a>
         </div>
         <div class="project-sections">
             <h2>Description</h2>
-            <p>This is an app to look up anime that has or is airing, this uses the janki api that get information
+            <p>This is an application to look up information on anime that has or is airing, this uses the Janki api
+                that get information
                 from the My Anime List website. It allows you to see what is the most rated or most loved anime, as
-                well as sort out anime by their genres or search up a word to find a certain anime.</p>
+                well as sort out anime by their genres or search up a word to find a certain anime. Then you can filter
+                by the type of media you are looking to find the right information for your search, once you found an
+                anime you can click on the card and it will give more information on the anime as well as a trailer.</p>
         </div>
         <div class="project-sections">
             <h2>Software / Languages</h2>
@@ -79,17 +83,23 @@
                 <li>JSX</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>
+                <li>Zustand</li>
+                <li>TanStack Query</li>
             </ul>
         </div>
         <div class="project-sections">
             <h2>Lessons Learned</h2>
-            <p>This was my first big project using react so I learnt a lot about how react renders pages and that
-                using components to reuse for the project.</p>
-            <p>I got a better understanding of hooks and how to use them within my app from useState to update
-                Information on the page to useContext so don't need to prop drill around the whole project.</p>
-            <p>I also learned that not using a framework and creating my own css took a long time as I changed a lot
-                of the design as I developed the app. But by creating this app with my own css I have improved my
-                css skills and have a better understanding of how sections of css works.</p>
+            <p>As this project is more of a re-creation project I have learnt better ways to display content and to make
+                it more visually pleasing. With more knowledge on react it allowed me to structure my code to be more
+                neater and easier to read.</p>
+            <p>I moved away from context api this time to try out something new for state management so I used Zustand.
+                Once I used it I seen the benefits of using it and am more willing to try out different state
+                managements in different projects.</p>
+            <p>I re-used TanStack Query in this project cause I liked the benefits it gives but I wasn't quiet sure how
+                it worked so I wanted to learn a bit more on how it works and this allowed me to experiment on why it
+                can do where I don't have to rely on useEffect to do all my fetching.</p>
+            <p>Working on this big projects lets me expand my CSS skills and IU learnt new concepts as well as try
+                things I haven't tried before like clip-path to create my tooltips on each card.</p>
         </div>
         <div class="project-sections">
             <h2>Future features</h2>
@@ -103,9 +113,7 @@
         </div>
         <div class="project-sections">
             <h2>Working On / Research</h2>
-            <p>Cleaned up UI that was causing graphical bugs Added loading text while waiting for api respond. Fixed
-                pagnation bug where it wasnt updating on some links. Fixed navbar activing when not clicked. Need to
-                change where the api warning is displayed. add a visual loading spinner when fetching data.</p>
+            <p>Creating a logo for the website</p>
         </div>
     </main>
     <footer>
@@ -131,7 +139,7 @@
             </ul>
         </div>
         <div class="footer-section footer-name">
-            <p>Brendon O'Neill 2023</p>
+            <p>Brendon O'Neill 2024</p>
         </div>
     </footer>
     <script src="js/indexAnimation.js" async defer></script>
