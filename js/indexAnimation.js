@@ -19,6 +19,10 @@ let currentText = [" "];
 let j = 0;
 let i = 0;
 let cycleFinished = false;
+
+//form
+const form = document.querySelector("#form")
+const formmodel = document.querySelector("#formmodel")
 function textLoop() {
   textDisplay.innerHTML = currentText.join("");
   if (i < textArray.length) {
@@ -82,6 +86,32 @@ function themeChange() {
     darkToggle.classList.remove("toggle-light");
     document.documentElement.setAttribute("data-theme", "dark");
   }
+}
+
+form.addEventListener('submit', function(event) {
+
+  formHandler(event)
+})
+
+async function formHandler(e) {
+  e.preventDefault()
+  let name = document.querySelector("#name")
+  let email = document.querySelector("#email")
+  let text = document.querySelector("#text")
+  let a = await fetch("https://yko8kw06tyklhyhrgtrg.brendon-projects.blog/formemail/", {
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      method: "POST",
+      body: JSON.stringify({ name: encodeURI(name.value), email: encodeURI(email.value), text: encodeURI(text.value) }),
+  })
+  name.value = "";
+  email.value = "";
+  text.value = "";
+  formmodel.classList.add("form-appear")
+  setTimeout(() => {
+    formmodel.classList.remove("form-appear")
+  }, 4000)
 }
 
 if (document.title === "Brendon O'Neill's Portfolio") {

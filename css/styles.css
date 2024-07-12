@@ -759,6 +759,30 @@ form {
     padding: 0.5rem 0.2rem;
 }
 
+.form-model {
+    background-color: var(--secondary-colour);
+    color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 40%;
+    height: 40px;
+    position: fixed;
+    padding: 0.5rem;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0);
+    border-radius: 5px;
+    z-index: 120;
+    display: none;
+}
+
+.form-appear {
+    display: block;
+}
+
+
 /* Footer */
 
 footer {
@@ -1203,6 +1227,12 @@ footer {
         max-width: 80%;
     }
 
+    .form-model {
+        text-align: center;
+        width: 20%;
+
+    }
+
 }
 
 @media only screen and (min-width: 1023px) {
@@ -1357,6 +1387,14 @@ footer {
         flex-flow: row;
         align-items: center;
     }
+
+
+    .form-model {
+        text-align: center;
+        width: 10%;
+
+    }
+
 }
 
 @media only screen and (min-width: 1400px) {
