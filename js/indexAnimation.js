@@ -103,7 +103,7 @@ async function formHandler(e) {
           'Content-Type': 'application/json'
       },
       method: "POST",
-      body: JSON.stringify({ name: encodeURI(name.value), email: encodeURI(email.value), text: encodeURI(text.value) }),
+      body: JSON.stringify({ name: name.value, email: email.value, text: text.value }),
   })
   name.value = "";
   email.value = "";
